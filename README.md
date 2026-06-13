@@ -1,99 +1,124 @@
-# 🛡️ AI Security Series 2026
+# AI Security Series 2026
 
-> A comprehensive series on AI Security covering the full threat landscape from an engineer's perspective. 27 posts, 120+ sources.
+A comprehensive technical series on AI Security covering the full threat landscape — from foundational frameworks to real-world breaches, offensive techniques, and defense architectures. Written for security engineers, developers, and CISOs.
 
-[![Author](https://img.shields.io/badge/Author-Van%20Hoang%20Kha-blue)](https://github.com/vanhoangkha)
-[![Posts](https://img.shields.io/badge/Posts-27-green)]()
-[![Sources](https://img.shields.io/badge/Sources-120%2B-orange)]()
-[![Last Updated](https://img.shields.io/badge/Updated-June%202026-red)]()
+**27 posts | 120+ sources | Last updated: June 2026**
+
+---
 
 ## About
 
-Cloud Security Engineer sharing knowledge about AI Security — from OWASP Top 10 for LLMs to real-world breaches, from prompt injection to self-replicating AI worms. Written for security engineers, developers, and CISOs navigating the AI threat landscape.
+This repository documents the rapidly evolving AI security landscape through structured, research-backed articles. Each post includes actionable guidance, code examples where applicable, and references to primary sources (Google GTIG, Anthropic, MITRE, IBM X-Force, Cisco, SANS, Verizon DBIR, WEF, OWASP, and academic papers).
 
-## 📚 Series Navigation
+---
 
-### 01 — Foundations
+## Table of Contents
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 1 | [AI Security Landscape 2026](01-foundations/01-ai-security-landscape-2026.md) | Overview, AI Security Stack 5 layers |
-| 2 | [OWASP Top 10 for LLMs](01-foundations/02-owasp-top-10-llm.md) | All 10 vulnerabilities + defenses |
-| 25 | [MITRE ATLAS Framework](01-foundations/25-mitre-atlas.md) | 16 tactics, 84 techniques |
+### Part 1 — Foundations
 
-### 02 — Vulnerabilities
+| # | Title | Summary |
+|---|-------|---------|
+| 01 | [AI Security Landscape 2026](01-foundations/01-ai-security-landscape-2026.md) | Threat overview, AI Security Stack (5 layers), key statistics |
+| 02 | [OWASP Top 10 for LLM Applications](01-foundations/02-owasp-top-10-llm.md) | Each vulnerability explained with defense code |
+| 25 | [MITRE ATLAS Framework](01-foundations/25-mitre-atlas.md) | 16 tactics, 84 techniques, usage guide |
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 3 | [Prompt Injection Deep Dive](02-vulnerabilities/03-prompt-injection-deep-dive.md) | Direct, indirect, multimodal attacks |
-| 4 | [Model Supply Chain Security](02-vulnerabilities/04-model-supply-chain-security.md) | Pickle exploits, backdoored weights |
-| 5 | [Agentic AI & MCP Security](02-vulnerabilities/05-agentic-ai-mcp-security.md) | 30 CVEs in 60 days, 7 risks |
-| 8 | [AI-Generated Code Security](02-vulnerabilities/08-ai-generated-code-security.md) | 25-62% code has vulnerabilities |
-| 22 | [Hallucination Security](02-vulnerabilities/22-hallucination-security.md) | Slopsquatting, package confusion |
+### Part 2 — Vulnerabilities
 
-### 03 — Attacks
+| # | Title | Summary |
+|---|-------|---------|
+| 03 | [Prompt Injection Deep Dive](02-vulnerabilities/03-prompt-injection-deep-dive.md) | Direct, indirect, multimodal; defense patterns |
+| 04 | [Model Supply Chain Security](02-vulnerabilities/04-model-supply-chain-security.md) | Pickle exploits, Hugging Face risks, backdoored weights |
+| 05 | [Agentic AI and MCP Security](02-vulnerabilities/05-agentic-ai-mcp-security.md) | 30 CVEs in 60 days, 7 risk categories |
+| 08 | [AI-Generated Code Security](02-vulnerabilities/08-ai-generated-code-security.md) | 25-62% of AI code carries vulnerabilities |
+| 22 | [Hallucination as Attack Vector](02-vulnerabilities/22-hallucination-security.md) | Slopsquatting, package confusion attacks |
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 7 | [Real-World Incidents 2026](03-attacks/07-real-world-incidents-2026.md) | 8 major case studies |
-| 9 | [Deepfake & Social Engineering](03-attacks/09-deepfake-social-engineering.md) | 40% BEC uses deepfake |
-| 10 | [Multi-Turn Attacks](03-attacks/10-multi-turn-attacks-jailbreaking.md) | 88% success rate on frontier models |
-| 11 | [RAG Security](03-attacks/11-rag-security.md) | Knowledge base poisoning |
-| 13 | [Data Poisoning](03-attacks/13-data-poisoning.md) | $60 to compromise any model |
-| 18 | [AI Worms](03-attacks/18-ai-worms.md) | Self-propagating agent malware |
-| 19 | [AI Exploit Generation](03-attacks/19-ai-exploit-generation.md) | Mythos, zero-day acceleration |
-| 20 | [LLMjacking](03-attacks/20-llmjacking.md) | $100K/day compute theft |
-| 21 | [Nation-State AI Threats](03-attacks/21-nation-state-ai-threats.md) | APTs weaponizing Gemini |
+### Part 3 — Attacks
 
-### 04 — Defense
+| # | Title | Summary |
+|---|-------|---------|
+| 07 | [Real-World Incidents 2026](03-attacks/07-real-world-incidents-2026.md) | 8 documented breaches and case studies |
+| 09 | [Deepfake and AI Social Engineering](03-attacks/09-deepfake-social-engineering.md) | 40% of BEC now uses AI-generated media |
+| 10 | [Multi-Turn Attacks and Jailbreaking](03-attacks/10-multi-turn-attacks-jailbreaking.md) | 88% success rate on frontier models (Cisco) |
+| 11 | [RAG Security](03-attacks/11-rag-security.md) | Knowledge base poisoning, 10 passages = 98% success |
+| 13 | [Data Poisoning](03-attacks/13-data-poisoning.md) | 250 documents and $60 compromise any model |
+| 18 | [AI Worms](03-attacks/18-ai-worms.md) | Self-propagating agent malware, Morris II |
+| 19 | [AI-Powered Exploit Generation](03-attacks/19-ai-exploit-generation.md) | Mythos, zero-day discovery acceleration |
+| 20 | [LLMjacking](03-attacks/20-llmjacking.md) | Cloud compute theft, $100K/day impact |
+| 21 | [Nation-State AI Threats](03-attacks/21-nation-state-ai-threats.md) | APTs weaponizing Gemini across all stages |
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 6 | [AI Red Teaming](04-defense/06-ai-red-teaming.md) | Framework, tools, methodology |
-| 12 | [Cloud AI Security (AWS)](04-defense/12-cloud-ai-security-aws.md) | AWS framework, Bedrock security |
-| 15 | [AI Security Tools](04-defense/15-ai-security-tools.md) | 12 tools comparison |
-| 17 | [AI Agent Sandboxing](04-defense/17-ai-agent-sandboxing.md) | Firecracker, gVisor, V8 isolation |
-| 24 | [Content Provenance](04-defense/24-ai-content-provenance.md) | C2PA, SynthID watermarking |
-| 27 | [LLM API Security](04-defense/27-llm-api-security.md) | Token-aware rate limiting |
+### Part 4 — Defense
 
-### 05 — Governance
+| # | Title | Summary |
+|---|-------|---------|
+| 06 | [AI Red Teaming](04-defense/06-ai-red-teaming.md) | Framework, methodology, tooling |
+| 12 | [Cloud AI Security on AWS](04-defense/12-cloud-ai-security-aws.md) | AWS AI Security Framework, Bedrock hardening |
+| 15 | [AI Security Tools](04-defense/15-ai-security-tools.md) | 12 tools compared, defense-in-depth stack |
+| 17 | [AI Agent Sandboxing](04-defense/17-ai-agent-sandboxing.md) | Firecracker, gVisor, V8 isolation patterns |
+| 24 | [Content Provenance and Watermarking](04-defense/24-ai-content-provenance.md) | C2PA, SynthID, EU requirements |
+| 27 | [LLM API and Inference Security](04-defense/27-llm-api-security.md) | Token-aware rate limiting, spend controls |
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 14 | [EU AI Act & Governance](05-governance/14-ai-governance-eu-ai-act.md) | AI Omnibus May 2026 |
-| 16 | [Shadow AI](05-governance/16-shadow-ai.md) | 80% workers use unapproved AI |
-| 26 | [CISO Playbook](05-governance/26-ciso-playbook.md) | Budget, strategy, priorities |
+### Part 5 — Governance
 
-### 06 — Industry
+| # | Title | Summary |
+|---|-------|---------|
+| 14 | [EU AI Act and Governance](05-governance/14-ai-governance-eu-ai-act.md) | AI Omnibus May 2026, compliance timeline |
+| 16 | [Shadow AI](05-governance/16-shadow-ai.md) | 80% of workers use unapproved AI tools |
+| 26 | [CISO Playbook](05-governance/26-ciso-playbook.md) | Budget allocation, strategy, priorities |
 
-| # | Title | Key Topic |
-|---|-------|-----------|
-| 23 | [Physical AI Security](06-industry/23-physical-ai-security.md) | Autonomous vehicles, IoT |
-| 28 | [Healthcare & Finance](06-industry/28-healthcare-finance-ai-security.md) | HIPAA, fraud detection |
+### Part 6 — Industry
 
-## 🔑 Key Statistics
+| # | Title | Summary |
+|---|-------|---------|
+| 23 | [Physical AI Security](06-industry/23-physical-ai-security.md) | Autonomous vehicles, IoT, adversarial physical attacks |
+| 28 | [Healthcare and Finance](06-industry/28-healthcare-finance-ai-security.md) | HIPAA compliance, fraud detection, model risk |
 
-- **2,130** AI-related CVEs in 2025 alone (+34.6% YoY)
-- **88%** multi-turn attack success rate on frontier models
-- **250 documents + $60** can poison any LLM
-- **$100K/day** cost of LLMjacking attacks
-- **First autonomous AI cyberattack** documented in early 2026
-- **10,000+** zero-days found by AI in a single month
-- **40%** of BEC attacks now use deepfakes
-- **80%+** of workers use unapproved AI tools
+---
 
-## 🏗️ Built With
+## Key Findings
 
-- Research from 120+ sources: Google GTIG, Anthropic, MITRE, IBM X-Force, Cisco, SANS, Verizon DBIR, WEF, OWASP, arxiv papers
-- Written June 2026
+- 2,130 AI-related CVEs disclosed in 2025, a 34.6% year-over-year increase
+- Multi-turn attack success rates reach 88% on frontier models from all major providers
+- 250 poisoned documents at $60 cost can backdoor any LLM regardless of size
+- LLMjacking attacks cost victims $46,000 to $100,000+ per day in stolen compute
+- First documented autonomous AI cyberattack occurred in early 2026
+- AI discovered 10,000+ critical vulnerabilities in production software within one month
+- 40% of business email compromise attacks now incorporate AI-generated deepfakes
+- 80% of enterprise workers use unauthorized AI tools with no visibility or controls
 
-## 👤 Author
+---
+
+## Sources
+
+Primary research drawn from:
+
+- Google Threat Intelligence Group (GTIG)
+- Anthropic Research
+- MITRE ATLAS / Center for Threat-Informed Defense
+- IBM X-Force
+- Cisco Security Research
+- SANS Institute
+- Verizon Data Breach Investigations Report 2026
+- World Economic Forum Global Cybersecurity Outlook
+- OWASP AI Security Projects
+- Trend Micro TrendAI
+- Cloud Security Alliance
+- Academic papers (arxiv)
+
+Full reference lists are included at the end of each post.
+
+---
+
+## Author
 
 **Van Hoang Kha**
-- Cloud Security Engineer | Ho Chi Minh City
-- AWS User Group Leader | AWS Community Builder
-- [LinkedIn](https://linkedin.com/in/vanhoangkha) | [X](https://x.com/WorkKhavan) | [Blog](https://cloudjourney.awsstudygroup.com)
 
-## 📄 License
+Cloud Security Engineer based in Ho Chi Minh City. Working at the intersection of cloud infrastructure, security, and community enablement. Designing and automating security on AWS — IAM, least privilege, Zero Trust.
 
-This work is shared for educational purposes. Feel free to reference with attribution.
+- [LinkedIn](https://linkedin.com/in/vanhoangkha)
+- [AWS First Cloud Journey](https://cloudjourney.awsstudygroup.com)
+
+---
+
+## License
+
+This work is shared for educational purposes under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reference with attribution.
